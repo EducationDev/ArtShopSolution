@@ -40,9 +40,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Artist.cs" />
+    <Compile Include="Model\Cart.cs" />
     <Compile Include="Model\CartItem.cs" />
+    <Compile Include="Model\Error.cs" />
     <Compile Include="Model\IdentityBase.cs" />
+    <Compile Include="Model\Metada\ArtistMetadata.cs" />
+    <Compile Include="Model\Metada\CartItemMetadata.cs" />
+    <Compile Include="Model\Metada\CartMetadata.cs" />
+    <Compile Include="Model\Metada\ErrorMetadata.cs" />
+    <Compile Include="Model\Metada\OrderDetailMetadata.cs" />
+    <Compile Include="Model\Metada\OrderMetadata.cs" />
+    <Compile Include="Model\Metada\OrderNumberMetadata.cs" />
+    <Compile Include="Model\Metada\ProductMetadata.cs" />
+    <Compile Include="Model\Order.cs" />
     <Compile Include="Model\OrderDetail.cs" />
+    <Compile Include="Model\OrderNumber.cs" />
     <Compile Include="Model\Product.cs" />
     <Compile Include="Model\Rating.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

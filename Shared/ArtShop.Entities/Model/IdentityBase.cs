@@ -12,7 +12,21 @@ namespace ArtShop.Entities.Model
     public class IdentityBase
     {
         [Key]
-        public int Id { get; set; }    
+        public int Id { get; set; }
+
+        [Required(ErrorMessage = "Requerido")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+        public System.DateTime CreatedOn { get; set; }
+
+        [MaxLength(256, ErrorMessage = "Created By Longitud  256 caracteres")]
+        public string CreatedBy { get; set; }
+
+        [Required(ErrorMessage = "Requerido")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+        public System.DateTime ChangedOn { get; set; }
+
+        [MaxLength(256, ErrorMessage = "Changed By Longitud  256 caracteres")]
+        public string ChangedBy { get; set; }
 
 
         //Muestra los valores de las propiedades con fines de depuración.

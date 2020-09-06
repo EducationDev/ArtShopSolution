@@ -1,6 +1,6 @@
 //====================================================================================================
 // Código base generado con Visual Studio: (Build 1.0.1973)
-// Unidad 4 - Layered Architecture
+// Layered Architecture Solution Guidance
 // Generado por vcontreras - MCGA
 //====================================================================================================
 
@@ -36,7 +36,7 @@ namespace ArtShop.Entities.Model
         public int QuantitySold { get; set; }
 
         public double AvgStars { get; set; }
-
+        public int ArtistId { get; set; }
         public virtual Artist Artist { get; set; }
         public virtual ICollection<CartItem> CartItem { get; set; }
         public virtual ICollection<OrderDetail> OrderDetail { get; set; }
