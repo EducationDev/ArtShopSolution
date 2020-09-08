@@ -28,15 +28,10 @@ namespace ArtShop.Entities.Model
             /// <summary>
             /// User Id
             /// </summary>        
-            [DisplayName("User Id")]
+            [DisplayName("User Name")]
             [Required(ErrorMessage = "Requerido")]
             [MaxLength(128, ErrorMessage = "User Id Longitud  128 caracteres")]
-            public string
-              UserId
-            {
-                get;
-                set;
-            }
+            public string UserName { get; set; }
 
             /// <summary>
             /// Order Date
@@ -44,12 +39,7 @@ namespace ArtShop.Entities.Model
             [DisplayName("Order Date")]
             [Required(ErrorMessage = "Requerido")]
             [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
-            public System.DateTime
-              OrderDate
-            {
-                get;
-                set;
-            }
+            public DateTime OrderDate { get; set; }
 
             /// <summary>
             /// Total Price
@@ -87,7 +77,7 @@ namespace ArtShop.Entities.Model
                 set;
             }
 
-            
+
 
         }
     }
